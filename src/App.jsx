@@ -10,6 +10,7 @@ import AdminDashboard from "./component/admin/AdminDashboard.jsx";
 import AdminLogin from "./component/admin/AdminLoginpage.jsx";
 import AdminPost from "./component/admin/AdminPost.jsx";
 import AdminSignupRequest from "./component/admin/adminSignup.jsx";
+import LandingPage from "./component/LandingPage.jsx";
 import AdminNavbar from "./component/navbarComponent/AdminNavbar.jsx";
 import PublicNavbar from "./component/navbarComponent/PublicNavbar.jsx";
 import SuperAdminNavbar from "./component/navbarComponent/SuperAdminNavbar";
@@ -18,7 +19,6 @@ import Login from "./component/publicComponent/userLogin.jsx";
 import SignUp from "./component/publicComponent/userSingup.jsx";
 import ApproveAdmins from "./component/superAdmin/superAdmin.jsx";
 import SuperAdminLogin from "./component/superAdmin/superAdminLogin.jsx";
-import LandingPage from "./component/LandingPage.jsx";
 
 function App() {
   console.log(import.meta.env.VITE_ARYAN);

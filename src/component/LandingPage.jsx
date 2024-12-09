@@ -1,12 +1,6 @@
 import React from "react";
+import { FaBell, FaSearch, FaUserGraduate } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import {
-  FaBell,
-  FaSearch,
-  FaUserGraduate,
-  FaEnvelope,
-  FaUsers,
-} from "react-icons/fa";
 
 const LandingPage = () => {
   return (
@@ -105,17 +99,17 @@ const LandingPage = () => {
 
       {/* Explore Events Section */}
       <section className="py-16 px-6">
-        <div className="bg-green-50 p-6 rounded-md shadow-md">
-          <h2 className="text-xl font-bold text-gray-800 mb-4">
+        <div className="bg-blue-50 p-6 rounded-md shadow-md">
+          <h2 className="text-xl font-bold text-blue-800 mb-4">
             Explore All Events
           </h2>
-          <p className="text-gray-600 mb-4">
+          <p className="text-blue-600 mb-4">
             Discover the latest events happening around you. Click below to view
             all events.
           </p>
           <NavLink
             to="/events"
-            className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200"
           >
             View All Events
           </NavLink>
@@ -138,13 +132,44 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Admin Section */}
+      <div className="bg-blue-50 p-6 rounded-md shadow-md my-8">
+        <h2 className="text-xl font-bold text-blue-800 mb-4">
+          Are you an Admin?
+        </h2>
+        <p className="text-blue-600 mb-4">
+          If you manage events, login to the Admin Panel to post updates and
+          notify students.
+        </p>
+        <NavLink
+          to="/admin/login"
+          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200 flex items-center justify-center space-x-2"
+        >
+          <span>Login as Admin</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M16.5 10.5v-6a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 003 4.5v9A2.25 2.25 0 005.25 16h6.75M16.5 10.5l3.75 3.75M16.5 10.5L12.75 6.75"
+            />
+          </svg>
+        </NavLink>
+      </div>
+
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-4">
+      <footer className="bg-blue-800 text-white py-4">
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Event Portal. All rights reserved.</p>
           <NavLink
             to="/admin/superadmin/login"
-            className="  text-[grey] px-4 py-2 rounded-md "
+            className="text-blue-300 hover:text-blue-100 px-4 py-2 rounded-md"
           >
             Login as Super Admin
           </NavLink>
