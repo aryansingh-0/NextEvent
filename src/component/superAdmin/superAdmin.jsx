@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Await, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import fetchAdminPosts from "../../../apiCall/admin/adminPost";
 
 const ApproveAdmins = () => {
   const navigate = useNavigate();
@@ -17,7 +16,7 @@ const ApproveAdmins = () => {
         await setTimeout(() => {
           console.log("waiting for feteching data");
         }, 1000);
-        await fetchAdminPosts("aryan");
+
         const response = await axios.get(
           `${import.meta.env.VITE_BACKENED}/api/superadmin/pending`,
           {

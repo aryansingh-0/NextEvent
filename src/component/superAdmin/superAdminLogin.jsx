@@ -12,14 +12,15 @@ function SuperAdminLogin() {
   // Handle the form submission
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log("hd");
+
     try {
       const response = await axiosInstance.post(
         `${import.meta.env.VITE_BACKENED}/api/superadmin/login`,
         {
           userId: userId,
           password: password,
-        }
+        },
+        { withCredentials: true }
       );
       console.log(response);
       if (response.status === 200) {

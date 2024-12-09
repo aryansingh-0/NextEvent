@@ -26,9 +26,9 @@ function App() {
   const Navbar = () => {
     const location = useLocation();
 
-    if (location.pathname.startsWith("/admin/superAdmin")) {
+    if (location.pathname.startsWith("/NextEvent/admin/superAdmin")) {
       return <SuperAdminNavbar />;
-    } else if (location.pathname.startsWith("/admin")) {
+    } else if (location.pathname.startsWith("/NextEvent/admin")) {
       return <AdminNavbar />;
     } else {
       return <PublicNavbar />;
