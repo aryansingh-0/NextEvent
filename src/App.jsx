@@ -40,7 +40,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* public routes */}
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/NextEvent/" element={<LandingPage />} />
         <Route path="/events" element={<AllPosts />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
