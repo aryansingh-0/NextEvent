@@ -12,7 +12,7 @@ const AdminNavbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Brand Name */}
         <NavLink
-          to="/admin/dashboard"
+          to="/NextEvent/admin/dashboard"
           className="text-2xl font-extrabold text-blue-600"
         >
           Admin Panel
@@ -21,22 +21,25 @@ const AdminNavbar = () => {
         {/* Navigation Links */}
         <ul className="flex space-x-6">
           <li>
-            <NavLink to="/admin/adminRequest" className={navLinkStyles}>
+            <NavLink
+              to="/NextEvent/admin/adminRequest"
+              className={navLinkStyles}
+            >
               Admin Requests
             </NavLink>
           </li>
           <li>
-            <NavLink to="/admin/login" className={navLinkStyles}>
+            <NavLink to="/NextEvent/admin/login" className={navLinkStyles}>
               Login
             </NavLink>
           </li>
           <li>
-            <NavLink to="/admin/post" className={navLinkStyles}>
+            <NavLink to="/NextEvent/admin/post" className={navLinkStyles}>
               Create Post
             </NavLink>
           </li>
           <li>
-            <NavLink to="/admin/dashboard" className={navLinkStyles}>
+            <NavLink to="/NextEvent/admin/dashboard" className={navLinkStyles}>
               Dashboard
             </NavLink>
           </li>

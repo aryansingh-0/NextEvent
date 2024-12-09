@@ -21,17 +21,17 @@ const PublicNavbar = () => {
         {/* Navigation Links */}
         <ul className="flex space-x-6">
           <li>
-            <NavLink to="/events" className={navLinkStyles}>
+            <NavLink to="/NextEvent/events" className={navLinkStyles}>
               Events
             </NavLink>
           </li>
           <li>
-            <NavLink to="/login" className={navLinkStyles}>
+            <NavLink to="/NextEvent/login" className={navLinkStyles}>
               Login
             </NavLink>
           </li>
           <li>
-            <NavLink to="/signup" className={navLinkStyles}>
+            <NavLink to="/NextEvent/signup" className={navLinkStyles}>
               Sign Up
             </NavLink>
           </li>

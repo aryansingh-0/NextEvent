@@ -12,7 +12,7 @@ const SuperAdminNavbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Brand Name (Clickable to Home) */}
         <NavLink
-          to="/admin/superAdmin/allRequest"
+          to="/NextEvent/admin/superAdmin/allRequest"
           className="text-2xl font-bold text-blue-700"
         >
           Super Admin Panel
@@ -21,13 +21,16 @@ const SuperAdminNavbar = () => {
         {/* Navigation Links */}
         <ul className="flex space-x-6">
           <li>
-            <NavLink to="/admin/superAdmin/login" className={navLinkStyles}>
+            <NavLink
+              to="/NextEvent/admin/superAdmin/login"
+              className={navLinkStyles}
+            >
               Login
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/admin/superAdmin/allRequest"
+              to="/NextEvent/admin/superAdmin/allRequest"
               className={navLinkStyles}
             >
               All Requests

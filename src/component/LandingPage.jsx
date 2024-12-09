@@ -16,7 +16,7 @@ const LandingPage = () => {
             instant notifications and updates.
           </p>
           <NavLink
-            to="/signup"
+            to="/NextEvent/signup"
             className="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-200"
           >
             Join Now
@@ -108,7 +108,7 @@ const LandingPage = () => {
             all events.
           </p>
           <NavLink
-            to="/events"
+            to="/NextEvent/events"
             className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200"
           >
             View All Events
@@ -124,7 +124,7 @@ const LandingPage = () => {
             Sign up today and never miss an exciting event again!
           </p>
           <NavLink
-            to="/signup"
+            to="/NextEvent/signup"
             className="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-200"
           >
             Get Started
@@ -142,7 +142,7 @@ const LandingPage = () => {
           notify students.
         </p>
         <NavLink
-          to="/admin/login"
+          to="/NextEvent/admin/login"
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200 flex items-center justify-center space-x-2"
         >
           <span>Login as Admin</span>
@@ -168,7 +168,7 @@ const LandingPage = () => {
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Event Portal. All rights reserved.</p>
           <NavLink
-            to="/admin/superadmin/login"
+            to="/NextEvent/admin/superadmin/login"
             className="text-blue-300 hover:text-blue-100 px-4 py-2 rounded-md"
           >
             Login as Super Admin
