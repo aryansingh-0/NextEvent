@@ -14,6 +14,9 @@ const ApproveAdmins = () => {
   useEffect(() => {
     const fetchPendingAdmins = async () => {
       try {
+        await setTimeout(() => {
+          console.log("waiting for feteching data");
+        }, 1000);
         await fetchAdminPosts("aryan");
         const response = await axios.get(
           `${import.meta.env.VITE_BACKENED}/api/superadmin/pending`,
