@@ -11,7 +11,10 @@ const PublicNavbar = () => {
     <nav className="bg-white shadow-md p-4 sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
         {/* Brand Logo */}
-        <NavLink to="/" className="text-2xl font-extrabold text-blue-600">
+        <NavLink
+          to="/NextEvent/"
+          className="text-2xl font-extrabold text-blue-600"
+        >
           Event Portal
         </NavLink>
 
