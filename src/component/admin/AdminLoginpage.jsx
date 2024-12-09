@@ -26,7 +26,7 @@ function AdminLogin() {
       }
 
       setTimeout(() => {
-        navigate("/admin/dashboard");
+        navigate("/NextEvent/admin/dashboard");
       }, 1000);
     } catch (error) {
       toast.error("Invalid email or password. Please try again.");
@@ -91,7 +91,7 @@ function AdminLogin() {
           Not an admin?{" "}
           <span
             className="text-blue-500 cursor-pointer hover:underline"
-            onClick={() => navigate("/admin/adminRequest")}
+            onClick={() => navigate("/NextEvent/admin/adminRequest")}
           >
             Go to Admin Request
           </span>

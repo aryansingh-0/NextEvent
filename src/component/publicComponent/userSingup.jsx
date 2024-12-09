@@ -27,7 +27,7 @@ function SignUp() {
 
       toast.success(response.data.message);
       setTimeout(() => {
-        navigate("/login"); // Redirect to login after successful signup
+        navigate("/NextEvent/login"); // Redirect to login after successful signup
       }, 1000);
     } catch (error) {
       console.log(error);
@@ -128,7 +128,7 @@ function SignUp() {
           Have an account?{" "}
           <span
             className="text-blue-500 cursor-pointer hover:underline"
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/NextEvent/login")}
           >
             Login
           </span>

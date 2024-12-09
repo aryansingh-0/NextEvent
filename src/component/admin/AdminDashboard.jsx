@@ -79,7 +79,7 @@ const AdminDashboard = () => {
             {fetchError}
             <button
               className="bg-blue-500 ml-5 px-4 py-2 rounded-md text-white cursor-pointer hover:underline"
-              onClick={() => navigate("/admin/login")}
+              onClick={() => navigate("/NextEvent/admin/login")}
             >
               Login here
             </button>

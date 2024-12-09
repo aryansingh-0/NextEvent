@@ -26,7 +26,7 @@ function SuperAdminLogin() {
         toast.success(response.data.message);
       }
       setTimeout(() => {
-        navigate("/admin/superAdmin/allRequest");
+        navigate("/NextEvent/admin/superAdmin/allRequest");
       }, 1000);
       // Handle success (save token to localStorage or handle redirection)
 

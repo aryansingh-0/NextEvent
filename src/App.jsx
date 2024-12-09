@@ -41,17 +41,26 @@ function App() {
       <Routes>
         {/* public routes */}
         <Route path="/NextEvent/" element={<LandingPage />} />
-        <Route path="/events" element={<AllPosts />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/NextEvent/events" element={<AllPosts />} />
+        <Route path="/NextEvent/login" element={<Login />} />
+        <Route path="/NextEvent/signup" element={<SignUp />} />
         {/* Route for Admin  Routes  */}
-        <Route path="admin/adminRequest" element={<AdminSignupRequest />} />
-        <Route path="admin/login" element={<AdminLogin />} />
-        <Route path="admin/post" element={<AdminPost />} />
-        <Route path="admin/dashboard" element={<AdminDashboard />} />
+        <Route
+          path="/NextEvent/admin/adminRequest"
+          element={<AdminSignupRequest />}
+        />
+        <Route path="/NextEvent/admin/login" element={<AdminLogin />} />
+        <Route path="/NextEvent/admin/post" element={<AdminPost />} />
+        <Route path="/NextEvent/admin/dashboard" element={<AdminDashboard />} />
         {/* Route for Super Admin */}
-        <Route path="admin/superAdmin/login" element={<SuperAdminLogin />} />
-        <Route path="admin/superAdmin/allRequest" element={<ApproveAdmins />} />
+        <Route
+          path="/NextEvent/admin/superAdmin/login"
+          element={<SuperAdminLogin />}
+        />
+        <Route
+          path="/NextEvent/admin/superAdmin/allRequest"
+          element={<ApproveAdmins />}
+        />
         {/* Optional: Default Route */}
         <Route
           path="*"

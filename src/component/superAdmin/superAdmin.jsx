@@ -81,7 +81,7 @@ const ApproveAdmins = () => {
             Access Denied
             <button
               className="bg-blue-500 ml-5 px-4 py-2 rounded-md text-white cursor-pointer hover:underline"
-              onClick={() => navigate("/admin/superAdmin/login")}
+              onClick={() => navigate("/NextEvent/admin/superAdmin/login")}
             >
               Login here
             </button>

@@ -125,7 +125,7 @@ const AdminSignupRequest = () => {
           Admin?{" "}
           <span
             className="text-blue-500 cursor-pointer hover:underline"
-            onClick={() => navigate("/admin/login")}
+            onClick={() => navigate("/NextEvent/admin/login")}
           >
             Go to Login
           </span>

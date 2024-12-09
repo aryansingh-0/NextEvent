@@ -25,7 +25,7 @@ function Login() {
       // If login is successful, redirect to home or dashboard
       console.log(response.data);
       // Optionally store token in local storage or cookies
-      navigate("/home"); // Example redirection to a home page
+      navigate("/NextEvent/events"); // Example redirection to a home page
     } catch (error) {
       setErrorMessage("Invalid email or password.");
     }
@@ -94,7 +94,7 @@ function Login() {
           Don't have an account?{" "}
           <span
             className="text-blue-500 cursor-pointer hover:underline"
-            onClick={() => navigate("/signup")}
+            onClick={() => navigate("/NextEvent/signup")}
           >
             Sign Up
           </span>
