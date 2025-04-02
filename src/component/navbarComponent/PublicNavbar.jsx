@@ -5,17 +5,18 @@ const PublicNavbar = () => {
   const navLinkStyles = ({ isActive }) =>
     isActive
       ? "text-white bg-blue-500 px-4 py-2 rounded-md"
-      : "text-gray-700 hover:text-blue-500 px-4 py-2 rounded-md transition";
+      : "text-blue-700 font-bold hover:text-blue-500 px-4 py-2 rounded-md transition";
 
   return (
-    <nav className="bg-white shadow-md p-4 sticky top-0 z-10">
+    <nav className="bg-black/10 backdrop-blur-lg shadow-lg border border-white/20 p-4 sticky top-0 z-10 rounded-xl">
+
       <div className="container mx-auto flex justify-between items-center">
         {/* Brand Logo */}
         <NavLink
           to="/NextEvent/"
           className="text-2xl font-extrabold text-blue-600"
         >
-          Event Portal
+          Next Event
         </NavLink>
 
         {/* Navigation Links */}

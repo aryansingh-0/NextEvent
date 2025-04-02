@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // To navigate after login
-import axiosInstance from "../axiosInstance";
+import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -14,7 +14,7 @@ function AdminLogin() {
     e.preventDefault();
 
     try {
-      const response = await axiosInstance.post(
+      const response = await axios.post(
         `${import.meta.env.VITE_BACKENED}/api/auth/admin/login`,
         {
           emailId: email,

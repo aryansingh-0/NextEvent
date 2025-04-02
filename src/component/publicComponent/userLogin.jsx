@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // to navigate to signup page
 import { ToastContainer, toast } from "react-toastify";
-import axiosInstance from "../axiosInstance"; // for making API requests
 
+import axios from "axios";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axiosInstance.post(
+      const response = await axios.post(
         `${import.meta.env.VITE_BACKENED}/api/user/login`,
         {
           emailId: email,

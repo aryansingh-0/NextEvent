@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Await, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -13,9 +13,7 @@ const ApproveAdmins = () => {
   useEffect(() => {
     const fetchPendingAdmins = async () => {
       try {
-        await setTimeout(() => {
-          console.log("waiting for feteching data");
-        }, 1000);
+         
 
         const response = await axios.get(
           `${import.meta.env.VITE_BACKENED}/api/superadmin/pending`,
@@ -23,6 +21,7 @@ const ApproveAdmins = () => {
             withCredentials: true, // Include cookies in the request
           }
         );
+         
         setPendingAdmins(response.data.data); // Access the correct `data` array
 
         setIsLoading(false);
@@ -35,6 +34,8 @@ const ApproveAdmins = () => {
 
     fetchPendingAdmins();
   }, []);
+
+  
 
   const handleDecline = async (id) => {
     try {
